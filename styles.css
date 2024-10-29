@@ -135,12 +135,15 @@ button{
     background-color: rgb(23, 23, 23);
     justify-content: center;
 
+    
     align-items: center;
 }
 .resume-container{
     background: linear-gradient(rgb(37, 37, 37), black);
     display: flex; 
     width: 55rem;
+    width: 100%;
+    max-width: 90%;
     flex-direction: column;
   margin-top: 20px;
     gap: 10px;
