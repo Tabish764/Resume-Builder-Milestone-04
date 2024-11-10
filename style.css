@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    font-family: 'Poppins',Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+   width: 100%;
+    min-height: 100vh;
+    background-color: #181818;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    
+}
+h1{
+    margin-top: 20px;
+    font-size: 3rem;
+}
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+p{
+    font-size: 1.3rem;
+}
+.input-section {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(rgb(25, 25, 25), black);
+    margin-bottom: 10px;
+}
+.input-info{
+   display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(rgb(25, 25, 25), black);
+    margin-bottom: 10px;
+}
+.input-data{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 2.5rem;
+    padding-left: 6px;
+    width: 100%;
+    color: black;
+    font-size: 1.2rem;
+    &:focus{
+        box-shadow:  0 0 10px white;
+    }
+}
+
+textarea{
+    border-radius: 10px;
+    padding: 5px;
+    color: black;
+    font-size: 1.2rem;
+   
+    &:focus{
+        box-shadow:  0 0 10px white;
+    }
+}
+form{
+   background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 25px;
+   width: 40rem;
+   margin-bottom: 30px;
+}
+
+button{
+    padding: 15px 10px 15px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border-radius: 2px solid white;
+}
+@media (max-width: 838px){
+    form{
+        width: 80%;
+        max-width: 90%;
+        
+    }
+    h1{
+        font-size: 2rem;
+    }
+    input{
+        height: 1.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:400px) {
+    h1{
+        font-size: 1.7rem;
+    }
+    button{
+        padding: 7px 5px 7px 5px;
+        font-size: 0.8rem;
+    }
+}
+.resume{
+    display: flex; 
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: rgb(23, 23, 23);
+    justify-content: center;
+
+    
+    align-items: center;
+}
+.resume-container{
+    background: linear-gradient(rgb(37, 37, 37), black);
+    display: flex; 
+    width: 55rem;
+    width: 100%;
+    max-width: 90%;
+    flex-direction: column;
+  margin-top: 20px;
+    gap: 10px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding-left: 30px;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+.resume-container p{
+    font-size: 1.5rem;
+}

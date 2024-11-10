@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dynamic Resume Builder</h1>
+      
+      <form id="form">
+        <div  class="input-info">
+          <h2>Personal Info</h2>
+          <div class="input-data">
+            
+            <p>Enter Your Name</p>
+            <input required id="firstName" type="text"placeholder="Enter Your Name"/>
+            <p>Enter Your Email</p>
+            <input required id="email" type="" placeholder="Enter Your Email"/>
+            <p>Enter Your Phone</p>
+            <input required id="number" type="number" placeholder="Enter Your Number"/>
+          </div>
+
+          <button id="button" type="button" onclick="handleClickEvent()">Show All Sections</button>
+        </div>
+        <div >
+          <div id="input-display" class="input-section">
+          <h2>Education</h2>
+          <textarea required id="education"  rows="7" name="" id=""></textarea>
+        </div>
+        
+        <div  id="input-display" class="input-section">
+          <h2>Skills</h2>
+          <textarea required id="skills"  rows="7" name="" id=""></textarea>
+        </div>
+        
+        <div id="input-display" class="input-section">
+          <h2>Work Experience</h2>
+          <textarea required id="exp"  rows="7" name="" id=""></textarea>
+        </div>
+        
+        <div>
+          <button type="submit">Generate Resume</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="resume" id="resume">
+    
+  </div>
+  <script src="index.js"></script>
+  </body>
+</html>
